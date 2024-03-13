@@ -11,30 +11,6 @@
     <AssemblyName>stayboogyUP</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\sbUP\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>false</MapFileExtensions>
-    <SupportUrl>https://github.com/stayboogy/stayboogyUP-MW3RTM/issues</SupportUrl>
-    <ErrorReportUrl>https://github.com/stayboogy/stayboogyUP-MW3RTM/issues</ErrorReportUrl>
-    <ProductName>stayboogyUP PS3 MW3 Solo Survival RTM Tool</ProductName>
-    <PublisherName>stayboogy%40github.com</PublisherName>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>25</ApplicationRevision>
-    <ApplicationVersion>1.22.11.25</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
-    <PublishWizardCompleted>true</PublishWizardCompleted>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,10 +26,10 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>stayboogy_runbar_icon.ico</ApplicationIcon>
@@ -142,10 +118,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <Generator>CCAPI.dll</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="README.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Generator>README.txt</Generator>
-    </EmbeddedResource>
     <Content Include="screenshots\RTM1.png" />
     <Content Include="screenshots\RTM2.png" />
     <Content Include="screenshots\RTM3.png" />
@@ -167,6 +139,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>start $(ProjectDir)mkRelease.cmd</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
