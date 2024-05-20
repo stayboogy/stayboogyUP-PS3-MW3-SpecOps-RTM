@@ -1,5 +1,9 @@
 # stayboogyUP PS3 MW3 Special Ops RTM Tool
 
+## Download
+
+https://github.com/stayboogy/stayboogyUP-PS3-MW3-SpecOps-RTM/releases/download/perf/stayboogyUP-rtm-last.zip
+
 
 ## How to Build
 
