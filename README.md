@@ -1,4 +1,4 @@
-# stayboogy_stayboogyUP-SpecOPs-MW3-RTM
+# stayboogyUP PS3 MW3 Special Ops RTM Tool
 
 
 ## How to Build
