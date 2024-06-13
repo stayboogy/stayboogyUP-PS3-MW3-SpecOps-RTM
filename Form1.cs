@@ -1,4 +1,9 @@
-﻿using System;
+﻿// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

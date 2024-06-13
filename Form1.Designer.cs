@@ -1,4 +1,9 @@
-﻿namespace StayboogyUP
+﻿// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
+namespace StayboogyUP
 {
     partial class Form1
     {
